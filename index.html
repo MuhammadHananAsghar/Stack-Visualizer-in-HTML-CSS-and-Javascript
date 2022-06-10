@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Visualizer by Muhammad Hanan Asghar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: #000000;
+        font-family: "Raleway", sans-serif;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .stack {
+        width: 140px;
+        height: 500px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        transition: 1s all ease-in;
+      }
+      .stack .cube {
+        height: 50px;
+        border: 3px solid #fff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      .main .functions {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main .functions button {
+        margin-top: 3rem;
+        margin-right: 10px;
+        color: #000;
+        padding: 15px 50px;
+        font-weight: 600;
+        border: none;
+        background-color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.5s all ease-in;
+      }
+      .main .functions button:hover {
+        opacity: 0.7;
+      }
+      .content {
+        margin: 0rem 0rem 3rem 0rem;
+        color: #fff;
+      }
+      .content .product {
+        font-weight: bolder;
+        font-size: 35px;
+      }
+      .content .creator {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="content">
+        <span class="product">Stack Visualizer</span>&nbsp;&nbsp;
+        <span class="creator">By Muhammad Hanan Asghar</span>
+      </div>
+      <div class="stack"></div>
+      <div class="functions">
+        <button id="push">Push</button>
+        <button id="pop">Pop</button>
+        <button id="top">Top</button>
+        <button id="reset">Reset</button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
